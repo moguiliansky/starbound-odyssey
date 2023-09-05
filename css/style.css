@@ -4,6 +4,9 @@
     font-family: 'Montserrat', sans-serif;
     background-image: url(../img/fondo-nav.jpg);
     background-size: cover;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 .bg-dark {
@@ -56,6 +59,16 @@
     font-size: 18px;
 }
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.carousel__titulo {
+    font-weight: bold;
+}
+
 .nav-item:hover {
     background-color: rgba(0, 0, 0, 0.4)
 }
@@ -71,16 +84,17 @@
     color: white;
 }
 
-.main__parrafo {
-    color: white;
-}
-
 .main__contenedor {
     display: flex;
     margin-top: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgb(186, 180, 71);
+    margin-bottom: 24px;
 }
 
 .main__parrafo {
+    text-align: justify;
+    color: white;
     width: 50%;
     padding-right: 48px;
 }
@@ -93,10 +107,87 @@
     border-radius: 20px;
 }
 
+.titulo-articulo {
+    color: white;
+    font-size: 24px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.card {
+    margin-right: 24px;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: black;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__texto {
+    margin: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*TABLET ONLY*/
+
+@media (min-width: 992px) and (max-width: 1182px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+}
+
+/*TABLET TO MOBILE*/
+
+@media (max-width: 1182px) {
+    .main__contenedor {
+        flex-direction: column;
+    }
+
+    .main__parrafo {
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    .main__carousel {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 24px;
+    }
+
+    .card:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+/*MOBILE*/
+
 @media (max-width: 991px) {
     .nav-item {
         max-width: 150px;
         margin-bottom: 10px;
     }
-}
 
+    .carousel__parrafo {
+        display: none;
+    }
+}
