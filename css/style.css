@@ -376,10 +376,13 @@
 .lista-requisitos, .parrafo-requisitos {
   font-family: "Montserrat", sans-serif;
   color: white;
+  text-align: justify;
+  padding: 20px;
 }
 
 .parrafo-requisitos {
   padding: 20px;
+  text-align: justify;
 }
 
 .requisitos-minimos {
