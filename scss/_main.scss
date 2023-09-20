@@ -1,0 +1,274 @@
+/*MAIN*/
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: calc(100% - 100px);
+}
+
+.carousel__titulo {
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main {
+    padding: 0px 80px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $color-gris;
+}
+
+.main__titulo {
+    @include titulo;
+    padding-top: 20px;
+    background-color: $color-gris;
+    text-align: left;
+}
+
+.main__contenedor {
+    display: flex;
+    margin-top: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid $color-dorado;
+}
+
+.main__parrafo {
+    text-align: justify;
+    color: white;
+    width: 50%;
+    padding-right: 48px;
+    font-size: 1.2rem;
+}
+
+.main__carousel {
+    width: 50%;
+}
+
+.descripcion-home {
+    text-align: justify;
+}
+
+.carousel__img {
+    border-radius: 20px;
+}
+
+.titulo-articulo {
+    color: white;
+    font-size: 24px;
+}
+
+.main-tienda {
+    padding: 20px;
+    background-color: $color-gris;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.card {
+    margin-right: 24px;
+}
+
+.card-body-main {
+    @include cards;
+}
+
+.card-body-main-container {
+    padding-bottom: 20px;
+}
+
+.card-home__video {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+.card-multimedia__video {
+    border-radius: 10px;
+    width: 100%;
+    max-height: calc(100vh - 300px);
+}
+
+.multimedia-main {
+    background-color: $color-gris;
+}
+
+.carousel__multimedia {
+    padding: 24px;
+}
+
+.carousel-inner {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.carousel-index {
+    background-color: $color-gris;
+}
+
+.imagenes-multimedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenes-multimedia__imagen {
+    cursor: pointer;
+    max-width: 480px;
+    padding: 12px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.titulo-multimedia__video {
+    @include titulo;
+    padding-top: 30px;
+}
+
+.titulos-multimedia {
+    @include titulo;
+}
+
+.tienda-card-body {
+    @include cards;
+}
+
+.shop-card-text {
+    margin-bottom: 24px !important;
+    text-align: justify;
+}
+
+.contenedor-foto-contacto {
+    display: flex;
+}
+
+.foto-contacto {
+    max-width: 388px;
+    border-radius: 10px;
+}
+
+.main-formulario {
+    display: flex;
+    padding: 24px;
+    background-color: $color-gris;
+    justify-content: space-evenly;
+}
+
+.section-formulario {
+    display: flex;
+    max-width: 480px;
+}
+
+.formulario {
+    color: $color-dorado;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-titulo {
+    @include titulo;
+    color: $color-dorado;
+}
+
+.check-form {
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+
+.campo {
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+
+.botonEnviar {
+    border-radius: 10px;
+    background-color: $color-dorado;
+    border: none;
+}
+
+.titulo__historia {
+    @include titulo;
+}
+
+.contenedor-historia {
+    font-family: 'Montserrat', sans-serif;
+    padding: 24px 48px;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: white;
+    background-color: $color-gris;
+}
+
+.contenedor-pj {
+    max-width: 480px;
+}
+
+.contenedor-personajes {
+    padding: 24px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-gris;
+}
+
+.titulo-personajes-historia {
+    @include titulo;
+    background-color: $color-gris;
+    margin: 0px;
+    border: none;
+}
+
+.bio-pj {
+    text-align: justify;
+}
+
+.requisitos-detalles {
+    display: flex;
+
+}
+
+.titulo-requisitos {
+    @include titulo;
+}
+
+.titulos-requisitos-min-opt {
+    @include titulo;
+    color: $color-dorado;
+    font-size: 1.5rem;
+}
+
+.lista-requisitos, .parrafo-requisitos {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.parrafo-requisitos {
+    padding: 20px;
+}
+.requisitos-minimos {
+    width: 50%;
+}
+
+.requisitos-optimos {
+    width: 50%;
+}

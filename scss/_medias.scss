@@ -1,0 +1,65 @@
+/*MEDIAS*/
+
+/*TABLET ONLY*/
+@media (min-width: 992px) and (max-width: 1182px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+}
+
+/*TABLET TO MOBILE*/
+@media (max-width: 1182px) {
+
+    .main {
+        padding: 20px;
+    }
+    .main__contenedor {
+        flex-direction: column;
+    }
+
+    .main__parrafo {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .main__carousel {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 991px) {
+    .nav-item {
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .carousel__parrafo,
+    .foto-contacto {
+        display: none;
+    }
+
+    .main-formulario {
+        justify-content: center;
+    }
+
+    .requisitos-detalles {
+        flex-direction: column;
+    }
+
+    .requisitos-minimos, .requisitos-optimos {
+        width: 100%;
+    }
+}

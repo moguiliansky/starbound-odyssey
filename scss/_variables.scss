@@ -1,0 +1,18 @@
+$color-gris:rgb(44, 44, 44);
+$color-dorado: rgb(186, 180, 71);
+
+@mixin titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+@mixin cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
