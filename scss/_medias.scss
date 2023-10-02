@@ -32,10 +32,19 @@
 
     .card {
         margin-bottom: 24px;
+        margin-right: 0px;
 
         &:last-child {
             margin-bottom: 0px;
         }
+    }
+
+    .contacto-titulo {
+        width: 100%;
+    }
+
+    .contenedor_padre_footer {
+        align-items: center;
     }
 }
 
@@ -59,7 +68,40 @@
         flex-direction: column;
     }
 
+    .contenedor-historia {
+        padding: 24px;
+    }
+
     .requisitos-minimos, .requisitos-optimos {
         width: 100%;
+    }
+
+    .imagenes-multimedia__imagen {
+        max-width: 100%;
+    }
+
+    .campo {
+        width: 100%;
+    }
+
+    .botonEnviar {
+        width: 100%;
+    }
+
+    .footer__div {
+        padding-bottom: 0px;
+    }
+
+    .contenedor_padre_footer {
+        flex-direction: column;    
+    }
+
+    .contenedor__img_footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__texto {
+        padding-top: 12px;
     }
 }
